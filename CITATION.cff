@@ -6,8 +6,4 @@ version: "4.0"
 authors:
   - family-names: "Ashraf"
     given-names: "Kahakashan"
-  - family-names: "Arefin"
-    given-names: "Mohammad Shamsul"
-  - family-names: "Hussain"
-    given-names: "M. M. Musharaf"
 license: "CC-BY-4.0"
