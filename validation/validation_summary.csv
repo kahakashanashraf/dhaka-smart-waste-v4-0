@@ -1,0 +1,65 @@
+check,expected,observed,status,severity
+Transport ZIP count,23,23,PASS,hard
+Transport ZIP integrity,0 corrupt ZIPs,[],PASS,hard
+Persistent bin count,5000,5000,PASS,hard
+Unique bin_index,5000,5000,PASS,hard
+Unique bin_id,5000,5000,PASS,hard
+bin_index range,0..4999,0..4999,PASS,hard
+Exact area-type counts,"{'Residential': 1300, 'Commercial': 700, 'Slum': 800, 'Market': 700, 'Office': 600, 'Education': 350, 'Garments': 200, 'Recreation': 350}","{'Residential': 1300, 'Slum': 800, 'Commercial': 700, 'Market': 700, 'Office': 600, 'Recreation': 350, 'Education': 350, 'Garments': 200}",PASS,hard
+Exact neighborhood counts,"{'Mirpur': 1046, 'Gulshan/Banani': 1023, 'Dhanmondi': 997, 'Old Dhaka': 972, 'Motijheel': 962}","{'Mirpur': 1046, 'Gulshan/Banani': 1023, 'Dhanmondi': 997, 'Old Dhaka': 972, 'Motijheel': 962}",PASS,hard
+Allowed container volumes,"[240.0, 360.0, 660.0, 1100.0]","[np.float64(240.0), np.float64(360.0), np.float64(660.0), np.float64(1100.0)]",PASS,hard
+Collection threshold bounds,0..100%,72.000..85.000,PASS,hard
+Informal recovery-rate bounds,0..1,0.030042..0.519860,PASS,hard
+Synthetic latitude bounds,plausible Dhaka envelope 23.60..23.90,23.684755..23.833191,PASS,soft
+Synthetic longitude bounds,plausible Dhaka envelope 90.25..90.55,90.338470..90.448257,PASS,soft
+Documented bins.parquet release file,bins.parquet available with public Parquet release,/content/drive/MyDrive/Dhaka Smart Waste V4.0 2025/PARQUET_PARTS/bins.parquet,PASS,soft
+Observation Parquet file count,92,92,PASS,hard
+Observation part indices,000..091 exactly once,"[0, 1, 2, 3]...[88, 89, 90, 91]",PASS,hard
+Per-file row counts,"000..090: 480,000; 091: 120,000","min=120,000, max=480,000",PASS,hard
+Total hourly observations,"43,800,000","43,800,000",PASS,hard
+Parquet schemas identical,identical across all 92 parts,True,PASS,hard
+Required observation columns present,50 required fields,59 total fields,PASS,hard
+Full scan row count,"43,800,000","43,800,000",PASS,hard
+Unique bin-hour coverage,0 duplicates and 0 missing keys,duplicates=0; missing=0; invalid=0,PASS,hard
+Hours per bin,"8,760 for every bin","min=8,760; max=8,760",PASS,hard
+Timestamp Rule Mismatch,0,0,PASS,hard
+Day Of Week Mismatch,0,0,PASS,hard
+Negative Mass,0,0,PASS,hard
+Recovery Exceeds Gross,0,0,PASS,hard
+Mass Balance Mismatch,0,0,PASS,hard
+Mass To Volume Mismatch,0,0,PASS,hard
+Nonpositive Bulk Density,0,0,PASS,hard
+Composition Sum Not 100,0,0,PASS,hard
+Composition Out Of Range,0,0,PASS,hard
+True Fill Out Of Range,0,0,PASS,hard
+Observed Fill Out Of Range,0,0,PASS,hard
+Predicted Fill Out Of Range,0,0,PASS,hard
+Needs Collection Rule Mismatch,0,0,PASS,hard
+Due Without Need,0,0,PASS,hard
+Collection Without Need,0,0,PASS,hard
+Negative Overflow,0,0,PASS,hard
+Overflow Below Full,0,0,PASS,hard
+Packet Sensor Not Nan,0,0,PASS,hard
+Available Sensor Nan,0,0,PASS,hard
+Packet Anomaly Conflict,0,0,PASS,hard
+Sensor Error Code Mismatch,0,0,PASS,hard
+Humidity Out Of Range,0,0,PASS,hard
+Battery Out Of Range,0,0,PASS,hard
+Weekend Flag Mismatch,0,0,PASS,hard
+Ramadan Flag Mismatch,0,0,PASS,hard
+Eid Fitr Period Flag Mismatch,0,0,PASS,hard
+Eid Fitr Day Flag Mismatch,0,0,PASS,hard
+Eid Adha Period Flag Mismatch,0,0,PASS,hard
+Eid Adha Day Flag Mismatch,0,0,PASS,hard
+Packet-loss rate,approximately 0.5% with context effects,0.4712%,PASS,soft
+Sensor-anomaly rate among available packets,approximately 0.1%,0.1000%,PASS,soft
+Fill-sensor residual mean,near 0 percentage points,0.0002,PASS,soft
+Fill-sensor residual SD,near configured sigma=1.5 pp (clipping lowers it slightly),1.5000,PASS,soft
+Monthly rainfall calibration,each monthly total within 0.05 mm of configured normal,max abs error=0.000022 mm,PASS,soft
+Sample temporal monotonicity between collections,0 decreases when no collection occurs,0,PASS,soft
+Temperature plausibility,sensor values broadly within 8..45 C,0,PASS,soft
+Maintenance restores battery,maintenance observations generally >=95% when packet available,0,PASS,soft
+School open > school closed generation,direction encoded by scenario,scenario=0.39131; reference=0.12181,PASS,soft
+Recreation weekend > weekday generation,direction encoded by scenario,scenario=0.67543; reference=0.48160,PASS,soft
+Eid-ul-Adha residential/slum > normal generation,direction encoded by scenario,scenario=8.58812; reference=1.70677,PASS,soft
+Eid-ul-Adha animal-residue share > normal,direction encoded by scenario,scenario=25.13312; reference=1.15685,PASS,soft
