@@ -1,0 +1,5 @@
+# Exact packages used by the successful reviewer-oriented full-release validation run on 2026-09-22.
+numpy==2.1.3
+pandas==2.2.3
+pyarrow==23.0.1
+matplotlib==3.10.0
