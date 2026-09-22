@@ -1,0 +1,1456 @@
+{
+  "dataset": "Dhaka Smart Waste Synthetic IoT Dataset V4.0 — One-Year 2025",
+  "validator": "validate_v4_0_paper.py",
+  "run_metadata": {
+    "python": "3.13.15",
+    "numpy": "2.1.3",
+    "pandas": "2.2.3",
+    "pyarrow": "23.0.1",
+    "batch_size": 200000,
+    "project_root": "/content/drive/MyDrive/Dhaka Smart Waste V4.0 2025",
+    "extract_dir": "/content/dhaka_smart_waste_v4_parquet_validation",
+    "output_dir": "/content/drive/MyDrive/Dhaka Smart Waste V4.0 2025/VALIDATION_OUTPUTS"
+  },
+  "zip_info": {
+    "zip_count": 23,
+    "corrupt_zips": [],
+    "members": [
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_01_of_23.zip",
+        "member": "observations_part_000.parquet",
+        "uncompressed_bytes": 22633932,
+        "compressed_bytes": 22633932,
+        "crc32": "e2d1ed7a"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_01_of_23.zip",
+        "member": "observations_part_001.parquet",
+        "uncompressed_bytes": 22207702,
+        "compressed_bytes": 22207702,
+        "crc32": "2eff400a"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_01_of_23.zip",
+        "member": "observations_part_002.parquet",
+        "uncompressed_bytes": 22060422,
+        "compressed_bytes": 22060422,
+        "crc32": "3d1f7a1b"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_01_of_23.zip",
+        "member": "observations_part_003.parquet",
+        "uncompressed_bytes": 22024074,
+        "compressed_bytes": 22024074,
+        "crc32": "5f9abd0a"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_02_of_23.zip",
+        "member": "observations_part_004.parquet",
+        "uncompressed_bytes": 22025668,
+        "compressed_bytes": 22025668,
+        "crc32": "84bc5b84"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_02_of_23.zip",
+        "member": "observations_part_005.parquet",
+        "uncompressed_bytes": 22039901,
+        "compressed_bytes": 22039901,
+        "crc32": "33e5d965"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_02_of_23.zip",
+        "member": "observations_part_006.parquet",
+        "uncompressed_bytes": 22035078,
+        "compressed_bytes": 22035078,
+        "crc32": "ff0f138d"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_02_of_23.zip",
+        "member": "observations_part_007.parquet",
+        "uncompressed_bytes": 22044734,
+        "compressed_bytes": 22044734,
+        "crc32": "b03f4392"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_03_of_23.zip",
+        "member": "observations_part_008.parquet",
+        "uncompressed_bytes": 22042133,
+        "compressed_bytes": 22042133,
+        "crc32": "16854caf"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_03_of_23.zip",
+        "member": "observations_part_009.parquet",
+        "uncompressed_bytes": 22045921,
+        "compressed_bytes": 22045921,
+        "crc32": "33ef5e26"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_03_of_23.zip",
+        "member": "observations_part_010.parquet",
+        "uncompressed_bytes": 22051768,
+        "compressed_bytes": 22051768,
+        "crc32": "46a99b4c"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_03_of_23.zip",
+        "member": "observations_part_011.parquet",
+        "uncompressed_bytes": 22062496,
+        "compressed_bytes": 22062496,
+        "crc32": "4a932660"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_04_of_23.zip",
+        "member": "observations_part_012.parquet",
+        "uncompressed_bytes": 22060778,
+        "compressed_bytes": 22060778,
+        "crc32": "10b1d1d6"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_04_of_23.zip",
+        "member": "observations_part_013.parquet",
+        "uncompressed_bytes": 22074537,
+        "compressed_bytes": 22074537,
+        "crc32": "f0450f78"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_04_of_23.zip",
+        "member": "observations_part_014.parquet",
+        "uncompressed_bytes": 22074963,
+        "compressed_bytes": 22074963,
+        "crc32": "e5726ca1"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_04_of_23.zip",
+        "member": "observations_part_015.parquet",
+        "uncompressed_bytes": 22108755,
+        "compressed_bytes": 22108755,
+        "crc32": "6b261de4"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_05_of_23.zip",
+        "member": "observations_part_016.parquet",
+        "uncompressed_bytes": 22122124,
+        "compressed_bytes": 22122124,
+        "crc32": "379710b1"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_05_of_23.zip",
+        "member": "observations_part_017.parquet",
+        "uncompressed_bytes": 22119944,
+        "compressed_bytes": 22119944,
+        "crc32": "a224a87a"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_05_of_23.zip",
+        "member": "observations_part_018.parquet",
+        "uncompressed_bytes": 22132390,
+        "compressed_bytes": 22132390,
+        "crc32": "fcffa1f6"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_05_of_23.zip",
+        "member": "observations_part_019.parquet",
+        "uncompressed_bytes": 22142974,
+        "compressed_bytes": 22142974,
+        "crc32": "01e1406f"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_06_of_23.zip",
+        "member": "observations_part_020.parquet",
+        "uncompressed_bytes": 22158623,
+        "compressed_bytes": 22158623,
+        "crc32": "2a8b2925"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_06_of_23.zip",
+        "member": "observations_part_021.parquet",
+        "uncompressed_bytes": 22191087,
+        "compressed_bytes": 22191087,
+        "crc32": "99460d73"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_06_of_23.zip",
+        "member": "observations_part_022.parquet",
+        "uncompressed_bytes": 22183978,
+        "compressed_bytes": 22183978,
+        "crc32": "19dc8400"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_06_of_23.zip",
+        "member": "observations_part_023.parquet",
+        "uncompressed_bytes": 22196745,
+        "compressed_bytes": 22196745,
+        "crc32": "fb382d6b"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_07_of_23.zip",
+        "member": "observations_part_024.parquet",
+        "uncompressed_bytes": 22170116,
+        "compressed_bytes": 22170116,
+        "crc32": "ff3d4a94"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_07_of_23.zip",
+        "member": "observations_part_025.parquet",
+        "uncompressed_bytes": 22160534,
+        "compressed_bytes": 22160534,
+        "crc32": "916e2deb"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_07_of_23.zip",
+        "member": "observations_part_026.parquet",
+        "uncompressed_bytes": 22162415,
+        "compressed_bytes": 22162415,
+        "crc32": "4ce1978e"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_07_of_23.zip",
+        "member": "observations_part_027.parquet",
+        "uncompressed_bytes": 22145398,
+        "compressed_bytes": 22145398,
+        "crc32": "bcca1b6c"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_08_of_23.zip",
+        "member": "observations_part_028.parquet",
+        "uncompressed_bytes": 22155876,
+        "compressed_bytes": 22155876,
+        "crc32": "602b8737"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_08_of_23.zip",
+        "member": "observations_part_029.parquet",
+        "uncompressed_bytes": 22125733,
+        "compressed_bytes": 22125733,
+        "crc32": "bc1e8e8c"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_08_of_23.zip",
+        "member": "observations_part_030.parquet",
+        "uncompressed_bytes": 22158009,
+        "compressed_bytes": 22158009,
+        "crc32": "74f07528"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_08_of_23.zip",
+        "member": "observations_part_031.parquet",
+        "uncompressed_bytes": 22143136,
+        "compressed_bytes": 22143136,
+        "crc32": "280197c6"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_09_of_23.zip",
+        "member": "observations_part_032.parquet",
+        "uncompressed_bytes": 22170215,
+        "compressed_bytes": 22170215,
+        "crc32": "59e84937"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_09_of_23.zip",
+        "member": "observations_part_033.parquet",
+        "uncompressed_bytes": 22155565,
+        "compressed_bytes": 22155565,
+        "crc32": "c989ac6e"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_09_of_23.zip",
+        "member": "observations_part_034.parquet",
+        "uncompressed_bytes": 22129967,
+        "compressed_bytes": 22129967,
+        "crc32": "9386ec6b"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_09_of_23.zip",
+        "member": "observations_part_035.parquet",
+        "uncompressed_bytes": 22130598,
+        "compressed_bytes": 22130598,
+        "crc32": "f71c9fbf"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_10_of_23.zip",
+        "member": "observations_part_036.parquet",
+        "uncompressed_bytes": 22135823,
+        "compressed_bytes": 22135823,
+        "crc32": "1fb5efd5"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_10_of_23.zip",
+        "member": "observations_part_037.parquet",
+        "uncompressed_bytes": 22120133,
+        "compressed_bytes": 22120133,
+        "crc32": "1958532e"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_10_of_23.zip",
+        "member": "observations_part_038.parquet",
+        "uncompressed_bytes": 22138718,
+        "compressed_bytes": 22138718,
+        "crc32": "24b9dbaa"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_10_of_23.zip",
+        "member": "observations_part_039.parquet",
+        "uncompressed_bytes": 22266983,
+        "compressed_bytes": 22266983,
+        "crc32": "dae2a61e"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_11_of_23.zip",
+        "member": "observations_part_040.parquet",
+        "uncompressed_bytes": 22149896,
+        "compressed_bytes": 22149896,
+        "crc32": "3564a228"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_11_of_23.zip",
+        "member": "observations_part_041.parquet",
+        "uncompressed_bytes": 22123684,
+        "compressed_bytes": 22123684,
+        "crc32": "e490624b"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_11_of_23.zip",
+        "member": "observations_part_042.parquet",
+        "uncompressed_bytes": 22141298,
+        "compressed_bytes": 22141298,
+        "crc32": "1af74e16"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_11_of_23.zip",
+        "member": "observations_part_043.parquet",
+        "uncompressed_bytes": 22121925,
+        "compressed_bytes": 22121925,
+        "crc32": "47c1ab08"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_12_of_23.zip",
+        "member": "observations_part_044.parquet",
+        "uncompressed_bytes": 22099626,
+        "compressed_bytes": 22099626,
+        "crc32": "52134b49"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_12_of_23.zip",
+        "member": "observations_part_045.parquet",
+        "uncompressed_bytes": 22093344,
+        "compressed_bytes": 22093344,
+        "crc32": "7f33c005"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_12_of_23.zip",
+        "member": "observations_part_046.parquet",
+        "uncompressed_bytes": 22088127,
+        "compressed_bytes": 22088127,
+        "crc32": "5fc490b0"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_12_of_23.zip",
+        "member": "observations_part_047.parquet",
+        "uncompressed_bytes": 22107956,
+        "compressed_bytes": 22107956,
+        "crc32": "1fa761b7"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_13_of_23.zip",
+        "member": "observations_part_048.parquet",
+        "uncompressed_bytes": 22084586,
+        "compressed_bytes": 22084586,
+        "crc32": "256a8914"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_13_of_23.zip",
+        "member": "observations_part_049.parquet",
+        "uncompressed_bytes": 22119771,
+        "compressed_bytes": 22119771,
+        "crc32": "21305c8c"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_13_of_23.zip",
+        "member": "observations_part_050.parquet",
+        "uncompressed_bytes": 22065064,
+        "compressed_bytes": 22065064,
+        "crc32": "5600fcfd"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_13_of_23.zip",
+        "member": "observations_part_051.parquet",
+        "uncompressed_bytes": 22144890,
+        "compressed_bytes": 22144890,
+        "crc32": "1c47032d"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_14_of_23.zip",
+        "member": "observations_part_052.parquet",
+        "uncompressed_bytes": 22076744,
+        "compressed_bytes": 22076744,
+        "crc32": "36c86b3e"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_14_of_23.zip",
+        "member": "observations_part_053.parquet",
+        "uncompressed_bytes": 22120010,
+        "compressed_bytes": 22120010,
+        "crc32": "2bf689fc"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_14_of_23.zip",
+        "member": "observations_part_054.parquet",
+        "uncompressed_bytes": 22105311,
+        "compressed_bytes": 22105311,
+        "crc32": "0d4d55e1"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_14_of_23.zip",
+        "member": "observations_part_055.parquet",
+        "uncompressed_bytes": 22113187,
+        "compressed_bytes": 22113187,
+        "crc32": "b11774e2"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_15_of_23.zip",
+        "member": "observations_part_056.parquet",
+        "uncompressed_bytes": 22105288,
+        "compressed_bytes": 22105288,
+        "crc32": "23d3f809"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_15_of_23.zip",
+        "member": "observations_part_057.parquet",
+        "uncompressed_bytes": 22110493,
+        "compressed_bytes": 22110493,
+        "crc32": "fba61ba0"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_15_of_23.zip",
+        "member": "observations_part_058.parquet",
+        "uncompressed_bytes": 22125249,
+        "compressed_bytes": 22125249,
+        "crc32": "f2f0e86c"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_15_of_23.zip",
+        "member": "observations_part_059.parquet",
+        "uncompressed_bytes": 22083253,
+        "compressed_bytes": 22083253,
+        "crc32": "6cfa9cb3"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_16_of_23.zip",
+        "member": "observations_part_060.parquet",
+        "uncompressed_bytes": 22112320,
+        "compressed_bytes": 22112320,
+        "crc32": "a2334d86"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_16_of_23.zip",
+        "member": "observations_part_061.parquet",
+        "uncompressed_bytes": 22128295,
+        "compressed_bytes": 22128295,
+        "crc32": "7189dca7"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_16_of_23.zip",
+        "member": "observations_part_062.parquet",
+        "uncompressed_bytes": 22135359,
+        "compressed_bytes": 22135359,
+        "crc32": "7738c7b9"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_16_of_23.zip",
+        "member": "observations_part_063.parquet",
+        "uncompressed_bytes": 22124664,
+        "compressed_bytes": 22124664,
+        "crc32": "a3c242f8"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_17_of_23.zip",
+        "member": "observations_part_064.parquet",
+        "uncompressed_bytes": 22120956,
+        "compressed_bytes": 22120956,
+        "crc32": "a647bc86"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_17_of_23.zip",
+        "member": "observations_part_065.parquet",
+        "uncompressed_bytes": 22125344,
+        "compressed_bytes": 22125344,
+        "crc32": "cf2ef43a"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_17_of_23.zip",
+        "member": "observations_part_066.parquet",
+        "uncompressed_bytes": 22110552,
+        "compressed_bytes": 22110552,
+        "crc32": "a3791b79"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_17_of_23.zip",
+        "member": "observations_part_067.parquet",
+        "uncompressed_bytes": 22132973,
+        "compressed_bytes": 22132973,
+        "crc32": "67f9f4a3"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_18_of_23.zip",
+        "member": "observations_part_068.parquet",
+        "uncompressed_bytes": 22131602,
+        "compressed_bytes": 22131602,
+        "crc32": "b3f21e6f"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_18_of_23.zip",
+        "member": "observations_part_069.parquet",
+        "uncompressed_bytes": 22152106,
+        "compressed_bytes": 22152106,
+        "crc32": "2d6b9ad9"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_18_of_23.zip",
+        "member": "observations_part_070.parquet",
+        "uncompressed_bytes": 22166933,
+        "compressed_bytes": 22166933,
+        "crc32": "22945e1f"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_18_of_23.zip",
+        "member": "observations_part_071.parquet",
+        "uncompressed_bytes": 22127488,
+        "compressed_bytes": 22127488,
+        "crc32": "65dd9e58"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_19_of_23.zip",
+        "member": "observations_part_072.parquet",
+        "uncompressed_bytes": 22141667,
+        "compressed_bytes": 22141667,
+        "crc32": "9df8fac4"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_19_of_23.zip",
+        "member": "observations_part_073.parquet",
+        "uncompressed_bytes": 22145776,
+        "compressed_bytes": 22145776,
+        "crc32": "10bbd2e4"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_19_of_23.zip",
+        "member": "observations_part_074.parquet",
+        "uncompressed_bytes": 22155723,
+        "compressed_bytes": 22155723,
+        "crc32": "19f4051c"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_19_of_23.zip",
+        "member": "observations_part_075.parquet",
+        "uncompressed_bytes": 22149979,
+        "compressed_bytes": 22149979,
+        "crc32": "d875447f"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_20_of_23.zip",
+        "member": "observations_part_076.parquet",
+        "uncompressed_bytes": 22142492,
+        "compressed_bytes": 22142492,
+        "crc32": "768b46b7"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_20_of_23.zip",
+        "member": "observations_part_077.parquet",
+        "uncompressed_bytes": 22148442,
+        "compressed_bytes": 22148442,
+        "crc32": "89af9253"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_20_of_23.zip",
+        "member": "observations_part_078.parquet",
+        "uncompressed_bytes": 22133768,
+        "compressed_bytes": 22133768,
+        "crc32": "fd6baf16"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_20_of_23.zip",
+        "member": "observations_part_079.parquet",
+        "uncompressed_bytes": 22140903,
+        "compressed_bytes": 22140903,
+        "crc32": "fad6d462"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_21_of_23.zip",
+        "member": "observations_part_080.parquet",
+        "uncompressed_bytes": 22133988,
+        "compressed_bytes": 22133988,
+        "crc32": "e0a0ac0d"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_21_of_23.zip",
+        "member": "observations_part_081.parquet",
+        "uncompressed_bytes": 22138057,
+        "compressed_bytes": 22138057,
+        "crc32": "bcdf738a"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_21_of_23.zip",
+        "member": "observations_part_082.parquet",
+        "uncompressed_bytes": 22133439,
+        "compressed_bytes": 22133439,
+        "crc32": "91960ceb"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_21_of_23.zip",
+        "member": "observations_part_083.parquet",
+        "uncompressed_bytes": 22139870,
+        "compressed_bytes": 22139870,
+        "crc32": "cbbd1940"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_22_of_23.zip",
+        "member": "observations_part_084.parquet",
+        "uncompressed_bytes": 22153567,
+        "compressed_bytes": 22153567,
+        "crc32": "0552cedf"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_22_of_23.zip",
+        "member": "observations_part_085.parquet",
+        "uncompressed_bytes": 22137508,
+        "compressed_bytes": 22137508,
+        "crc32": "21e9c208"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_22_of_23.zip",
+        "member": "observations_part_086.parquet",
+        "uncompressed_bytes": 22144037,
+        "compressed_bytes": 22144037,
+        "crc32": "308d29f0"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_22_of_23.zip",
+        "member": "observations_part_087.parquet",
+        "uncompressed_bytes": 22146639,
+        "compressed_bytes": 22146639,
+        "crc32": "a267c093"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_23_of_23.zip",
+        "member": "observations_part_088.parquet",
+        "uncompressed_bytes": 22147651,
+        "compressed_bytes": 22147651,
+        "crc32": "335855ed"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_23_of_23.zip",
+        "member": "observations_part_089.parquet",
+        "uncompressed_bytes": 22154271,
+        "compressed_bytes": 22154271,
+        "crc32": "ebf2b2bd"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_23_of_23.zip",
+        "member": "observations_part_090.parquet",
+        "uncompressed_bytes": 22143370,
+        "compressed_bytes": 22143370,
+        "crc32": "311e24b5"
+      },
+      {
+        "archive": "dhaka_smart_waste_v4_0_PARQUET_PART_23_of_23.zip",
+        "member": "observations_part_091.parquet",
+        "uncompressed_bytes": 5550057,
+        "compressed_bytes": 5550057,
+        "crc32": "cc3fd042"
+      }
+    ],
+    "extracted_cache_reused": true
+  },
+  "bins_source": "/content/drive/MyDrive/Dhaka Smart Waste V4.0 2025/PARQUET_PARTS/bins.parquet",
+  "bins_parquet_present": true,
+  "bin_metrics": {
+    "area_counts": {
+      "Residential": 1300,
+      "Slum": 800,
+      "Commercial": 700,
+      "Market": 700,
+      "Office": 600,
+      "Recreation": 350,
+      "Education": 350,
+      "Garments": 200
+    },
+    "neighborhood_counts": {
+      "Mirpur": 1046,
+      "Gulshan/Banani": 1023,
+      "Dhanmondi": 997,
+      "Old Dhaka": 972,
+      "Motijheel": 962
+    },
+    "latitude_range": [
+      23.684755325317383,
+      23.83319091796875
+    ],
+    "longitude_range": [
+      90.33847045898438,
+      90.44825744628906
+    ]
+  },
+  "parquet_metrics": {
+    "parquet_rows_per_file": [
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      480000,
+      120000
+    ],
+    "observation_columns": [
+      "activity_multiplier",
+      "animal_residue_pct",
+      "battery_level_percent",
+      "battery_maintenance_event",
+      "bin_index",
+      "collection_delay_minutes",
+      "collection_event",
+      "collection_threshold_percent",
+      "college_calendar_closed",
+      "date_index",
+      "day_of_week",
+      "dominant_waste_code",
+      "event_code",
+      "fill_level_percent",
+      "fish_meat_pct",
+      "friday_effect_active",
+      "green_other_pct",
+      "gross_waste_generation_kg",
+      "holiday_code",
+      "hour",
+      "hours_since_last_collection",
+      "humidity_percent",
+      "informal_recovery_kg",
+      "institution_status_code",
+      "is_collection_due",
+      "is_durga_puja_school_break",
+      "is_eid_day",
+      "is_eid_fitr_day",
+      "is_eid_fitr_period",
+      "is_eid_period",
+      "is_friday_prayer_window",
+      "is_packet_loss",
+      "is_public_holiday",
+      "is_ramadan",
+      "is_sensor_anomaly",
+      "is_special_working_day",
+      "is_weekend",
+      "metal_glass_pct",
+      "needs_collection",
+      "office_calendar_closed",
+      "organic_food_pct",
+      "overflow_kg",
+      "paper_cardboard_pct",
+      "plastic_pct",
+      "predicted_fill_level_percent",
+      "predicted_overflow_kg_4h",
+      "rainfall_mm_hour",
+      "school_calendar_closed",
+      "season_code",
+      "sensor_error_code",
+      "temperature_c",
+      "textile_pct",
+      "time_slot_code",
+      "timestamp_unix",
+      "true_fill_level_percent",
+      "waste_bulk_density_kg_m3",
+      "waste_entering_bin_kg",
+      "waste_volume_liter",
+      "weather_code"
+    ],
+    "observation_column_count": 59
+  },
+  "validation_metrics": {
+    "rows_scanned": 43800000,
+    "duplicate_bin_hour_keys": 0,
+    "missing_bin_hour_keys": 0,
+    "invalid_bin_hour_keys": 0,
+    "hours_per_bin_min": 8760,
+    "hours_per_bin_max": 8760,
+    "failure_counts": {
+      "timestamp_rule_mismatch": 0,
+      "day_of_week_mismatch": 0,
+      "negative_mass": 0,
+      "recovery_exceeds_gross": 0,
+      "mass_balance_mismatch": 0,
+      "mass_to_volume_mismatch": 0,
+      "nonpositive_bulk_density": 0,
+      "composition_sum_not_100": 0,
+      "composition_out_of_range": 0,
+      "true_fill_out_of_range": 0,
+      "observed_fill_out_of_range": 0,
+      "predicted_fill_out_of_range": 0,
+      "needs_collection_rule_mismatch": 0,
+      "due_without_need": 0,
+      "collection_without_need": 0,
+      "negative_overflow": 0,
+      "overflow_below_full": 0,
+      "packet_sensor_not_nan": 0,
+      "available_sensor_nan": 0,
+      "packet_anomaly_conflict": 0,
+      "sensor_error_code_mismatch": 0,
+      "humidity_out_of_range": 0,
+      "battery_out_of_range": 0,
+      "temperature_implausible": 0,
+      "maintenance_low_battery": 0,
+      "weekend_flag_mismatch": 0,
+      "ramadan_flag_mismatch": 0,
+      "eid_fitr_period_flag_mismatch": 0,
+      "eid_fitr_day_flag_mismatch": 0,
+      "eid_adha_period_flag_mismatch": 0,
+      "eid_adha_day_flag_mismatch": 0
+    },
+    "packet_loss_rate": 0.004712146118721461,
+    "sensor_anomaly_rate_available": 0.0009996878441444902,
+    "fill_sensor_noise_mean_pp": 0.00020273258751056256,
+    "fill_sensor_noise_std_pp": 1.4999941778808363,
+    "fill_sensor_noise_n": 43550028,
+    "sequential_sample_bins": [
+      82,
+      104,
+      107,
+      171,
+      466,
+      555,
+      624,
+      827,
+      864,
+      899,
+      924,
+      1050,
+      1070,
+      1111,
+      1210,
+      1264,
+      1570,
+      1713,
+      1828,
+      1860,
+      1891,
+      1935,
+      1956,
+      1985,
+      2005,
+      2060,
+      2189,
+      2350,
+      2468,
+      2574,
+      2612,
+      2722,
+      2755,
+      2904,
+      3025,
+      3053,
+      3090,
+      3105,
+      3239,
+      3266,
+      3293,
+      3404,
+      3415,
+      3486,
+      3503,
+      3632,
+      3750,
+      3878,
+      3938,
+      3984,
+      4012,
+      4051,
+      4151,
+      4242,
+      4267,
+      4286,
+      4301,
+      4437,
+      4483,
+      4499,
+      4557,
+      4706,
+      4947,
+      4956
+    ],
+    "sample_monotonic_violations_without_collection": 0,
+    "sample_post_collection_next_fill_median": 6.524450302124023,
+    "sample_post_collection_next_fill_p95": 10.381924629211426,
+    "forecast_4h_no_collection_n": 514552,
+    "forecast_4h_no_collection_mae_pp": 2.040301080108482,
+    "forecast_4h_no_collection_rmse_pp": 2.7735073186658745,
+    "forecast_4h_no_collection_bias_pp": 0.012693434676836894,
+    "gross_generation_by_area": {
+      "Commercial": 1.643295564418067,
+      "Education": 0.3398534955759925,
+      "Garments": 1.2943288475749801,
+      "Market": 2.0852641076434595,
+      "Office": 0.38671705792134425,
+      "Recreation": 0.5357690761055753,
+      "Residential": 1.7697464170048196,
+      "Slum": 1.7723802179729535
+    },
+    "gross_generation_by_density": {
+      "Low": 0.4394799228431597,
+      "Medium": 0.8880704438325999,
+      "High": 2.068059786418108
+    },
+    "collection_delay_minutes_by_accessibility": {
+      "Easy": 23.961813113304412,
+      "Moderate": 42.1498327858905,
+      "Difficult": 75.33458462579414
+    },
+    "scenario_means": {
+      "eid_adha_res_slum": 8.588120900499561,
+      "eid_fitr_res_slum": 2.288154162187425,
+      "friday_mosque_active": 5.973067248571087,
+      "friday_window_nonmosque": 1.283370836426523,
+      "normal_res_slum": 1.706770426468563,
+      "recreation_weekday": 0.4816034289789235,
+      "recreation_weekend": 0.6754314799713541,
+      "school_closed": 0.12180501051266758,
+      "school_open": 0.39130803061076436,
+      "animal_pct__eid_adha_res_slum": 25.13311507936508,
+      "animal_pct__normal_res_slum": 1.156847442680776
+    }
+  },
+  "checks": [
+    {
+      "check": "Transport ZIP count",
+      "expected": "23",
+      "observed": "23",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Transport ZIP integrity",
+      "expected": "0 corrupt ZIPs",
+      "observed": "[]",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Persistent bin count",
+      "expected": "5000",
+      "observed": "5000",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Unique bin_index",
+      "expected": "5000",
+      "observed": "5000",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Unique bin_id",
+      "expected": "5000",
+      "observed": "5000",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "bin_index range",
+      "expected": "0..4999",
+      "observed": "0..4999",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Exact area-type counts",
+      "expected": "{'Residential': 1300, 'Commercial': 700, 'Slum': 800, 'Market': 700, 'Office': 600, 'Education': 350, 'Garments': 200, 'Recreation': 350}",
+      "observed": "{'Residential': 1300, 'Slum': 800, 'Commercial': 700, 'Market': 700, 'Office': 600, 'Recreation': 350, 'Education': 350, 'Garments': 200}",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Exact neighborhood counts",
+      "expected": "{'Mirpur': 1046, 'Gulshan/Banani': 1023, 'Dhanmondi': 997, 'Old Dhaka': 972, 'Motijheel': 962}",
+      "observed": "{'Mirpur': 1046, 'Gulshan/Banani': 1023, 'Dhanmondi': 997, 'Old Dhaka': 972, 'Motijheel': 962}",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Allowed container volumes",
+      "expected": "[240.0, 360.0, 660.0, 1100.0]",
+      "observed": "[np.float64(240.0), np.float64(360.0), np.float64(660.0), np.float64(1100.0)]",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Collection threshold bounds",
+      "expected": "0..100%",
+      "observed": "72.000..85.000",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Informal recovery-rate bounds",
+      "expected": "0..1",
+      "observed": "0.030042..0.519860",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Synthetic latitude bounds",
+      "expected": "plausible Dhaka envelope 23.60..23.90",
+      "observed": "23.684755..23.833191",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Synthetic longitude bounds",
+      "expected": "plausible Dhaka envelope 90.25..90.55",
+      "observed": "90.338470..90.448257",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Documented bins.parquet release file",
+      "expected": "bins.parquet available with public Parquet release",
+      "observed": "/content/drive/MyDrive/Dhaka Smart Waste V4.0 2025/PARQUET_PARTS/bins.parquet",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Observation Parquet file count",
+      "expected": "92",
+      "observed": "92",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Observation part indices",
+      "expected": "000..091 exactly once",
+      "observed": "[0, 1, 2, 3]...[88, 89, 90, 91]",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Per-file row counts",
+      "expected": "000..090: 480,000; 091: 120,000",
+      "observed": "min=120,000, max=480,000",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Total hourly observations",
+      "expected": "43,800,000",
+      "observed": "43,800,000",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Parquet schemas identical",
+      "expected": "identical across all 92 parts",
+      "observed": "True",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Required observation columns present",
+      "expected": "50 required fields",
+      "observed": "59 total fields",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Full scan row count",
+      "expected": "43,800,000",
+      "observed": "43,800,000",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Unique bin-hour coverage",
+      "expected": "0 duplicates and 0 missing keys",
+      "observed": "duplicates=0; missing=0; invalid=0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Hours per bin",
+      "expected": "8,760 for every bin",
+      "observed": "min=8,760; max=8,760",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Timestamp Rule Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Day Of Week Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Negative Mass",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Recovery Exceeds Gross",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Mass Balance Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Mass To Volume Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Nonpositive Bulk Density",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Composition Sum Not 100",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Composition Out Of Range",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "True Fill Out Of Range",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Observed Fill Out Of Range",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Predicted Fill Out Of Range",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Needs Collection Rule Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Due Without Need",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Collection Without Need",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Negative Overflow",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Overflow Below Full",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Packet Sensor Not Nan",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Available Sensor Nan",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Packet Anomaly Conflict",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Sensor Error Code Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Humidity Out Of Range",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Battery Out Of Range",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Weekend Flag Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Ramadan Flag Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Eid Fitr Period Flag Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Eid Fitr Day Flag Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Eid Adha Period Flag Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Eid Adha Day Flag Mismatch",
+      "expected": "0",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "hard"
+    },
+    {
+      "check": "Packet-loss rate",
+      "expected": "approximately 0.5% with context effects",
+      "observed": "0.4712%",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Sensor-anomaly rate among available packets",
+      "expected": "approximately 0.1%",
+      "observed": "0.1000%",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Fill-sensor residual mean",
+      "expected": "near 0 percentage points",
+      "observed": "0.0002",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Fill-sensor residual SD",
+      "expected": "near configured sigma=1.5 pp (clipping lowers it slightly)",
+      "observed": "1.5000",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Monthly rainfall calibration",
+      "expected": "each monthly total within 0.05 mm of configured normal",
+      "observed": "max abs error=0.000022 mm",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Sample temporal monotonicity between collections",
+      "expected": "0 decreases when no collection occurs",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Temperature plausibility",
+      "expected": "sensor values broadly within 8..45 C",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Maintenance restores battery",
+      "expected": "maintenance observations generally >=95% when packet available",
+      "observed": "0",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "School open > school closed generation",
+      "expected": "direction encoded by scenario",
+      "observed": "scenario=0.39131; reference=0.12181",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Recreation weekend > weekday generation",
+      "expected": "direction encoded by scenario",
+      "observed": "scenario=0.67543; reference=0.48160",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Eid-ul-Adha residential/slum > normal generation",
+      "expected": "direction encoded by scenario",
+      "observed": "scenario=8.58812; reference=1.70677",
+      "status": "PASS",
+      "severity": "soft"
+    },
+    {
+      "check": "Eid-ul-Adha animal-residue share > normal",
+      "expected": "direction encoded by scenario",
+      "observed": "scenario=25.13312; reference=1.15685",
+      "status": "PASS",
+      "severity": "soft"
+    }
+  ],
+  "hard_failure_count": 0,
+  "overall_hard_status": "PASS"
+}
