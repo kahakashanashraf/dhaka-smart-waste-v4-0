@@ -85,4 +85,4 @@ CC BY 4.0 — Creative Commons Attribution 4.0 International.
 
 ## Citation
 
-Please cite the dataset record and associated data article when available. Citation metadata are provided in `CITATION.cff`.
+Ashraf, Kahakashan; Arefin, Mohammad Shamsul (2026), “A One-Year Context-Aware Synthetic IoT Dataset for Smart Waste Management in Dhaka, Bangladesh: 43.8 Million Hourly Observations”, Mendeley Data, V4, doi: 10.17632/ctt5kwppwt.4
