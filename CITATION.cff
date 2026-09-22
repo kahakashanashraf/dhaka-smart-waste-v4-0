@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this dataset, please cite the dataset record and associated data article."
+title: "A One-Year Context-Aware Synthetic IoT Dataset for Smart Waste Management in Dhaka, Bangladesh: 43.8 Million Hourly Observations"
+type: dataset
+version: "4.0"
+authors:
+  - family-names: "Ashraf"
+    given-names: "Kahakashan"
+  - family-names: "Arefin"
+    given-names: "Mohammad Shamsul"
+  - family-names: "Hussain"
+    given-names: "M. M. Musharaf"
+license: "CC-BY-4.0"
