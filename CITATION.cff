@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this dataset, please cite the dataset record."
+message: "If you use this dataset or its validation materials, please cite the Mendeley Data V4 record."
 title: "A One-Year Context-Aware Synthetic IoT Dataset for Smart Waste Management in Dhaka, Bangladesh: 43.8 Million Hourly Observations"
 type: dataset
 version: "4.0"
@@ -9,4 +9,5 @@ authors:
   - family-names: "Arefin"
     given-names: "Mohammad Shamsul"
 doi: "10.17632/ctt5kwppwt.4"
+repository-code: "https://github.com/kahakashanashraf/dhaka-smart-waste-v4-0"
 license: "CC-BY-4.0"
