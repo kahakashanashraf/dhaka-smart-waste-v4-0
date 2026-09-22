@@ -26,7 +26,7 @@ The complete multi-gigabyte data are kept outside GitHub so that users can downl
 - **Documentation package**: https://drive.google.com/drive/folders/1LpIMF1x3pF-aivdPPxvF2YHqNeds22eo
 - **Code and Colab notebooks**: https://drive.google.com/drive/folders/1N3naS2gc9BCBupLz7TVOGsXHm86CGg7C
 
-The same release is intended for archival distribution through Mendeley Data.
+The archival dataset release is available through **Mendeley Data V4**: https://doi.org/10.17632/ctt5kwppwt.4
 
 ## Data layouts
 
@@ -66,6 +66,22 @@ Validate the CSV/GZIP release:
 python scripts/validate_csv_parts.py /path/to/CSV_PARTS
 ```
 
+## Full-release technical validation
+
+A reviewer-oriented validation run on the distributed V4.0 release scanned all **43,800,000** hourly observations across **92** Parquet parts. The final automated gate reported:
+
+- **49/49 hard checks PASS**
+- **15/15 soft checks PASS**
+- **0 duplicate bin-hour keys**
+- **0 missing bin-hour keys**
+- **8,760 records for every one of the 5,000 bins**
+- packet-loss rate: **0.4712%**
+- sensor-anomaly rate among available packets: **0.1000%**
+- fill-sensor residual SD: **1.5000 percentage points**
+- four-hour no-collection forecast MAE: **2.0403 percentage points** (n = **514,552**)
+
+See `validation/` for the machine-readable/check-level evidence and `scripts/validate_v4_0_paper.py` for the publication-oriented validator. These are internal/release-consistency checks for a synthetic dataset, not field validation of deployed Dhaka smart bins.
+
 ## Repository contents
 
 ```text
@@ -75,6 +91,7 @@ docs/        methodology, dictionary, calibration and reproducibility notes
 data/        full CSV manifest
 sample/      small CSV examples
 notebooks/   Colab notebooks
+validation/  publication-oriented full-release validation artifacts
 ```
 
 The full observation data are intentionally hosted in Drive/Mendeley rather than committed directly to GitHub.
