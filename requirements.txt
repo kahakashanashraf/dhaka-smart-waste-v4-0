@@ -1,0 +1,7 @@
+# Required packages for the V4.0 generator and validators.
+# For each reproduction run, save the active environment with:
+# python -m pip freeze > environment_lock.txt
+numpy
+h5py
+pandas
+thrift
