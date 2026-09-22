@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+*.h5
+*.hdf5
+*.parquet
+observations_part_*.csv.gz
+*.zip
+environment_lock.txt
+environment_summary.txt
