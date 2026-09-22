@@ -54,17 +54,30 @@ python src/generate_v4_0.py
 python scripts/validate_v4_0.py
 ```
 
-Validate the exported Parquet release:
+Validate a reconstructed Parquet release under `final_parts/PARQUET/`:
 
 ```bash
-python scripts/validate_export_parts.py
+python scripts/validate_export_parts.py final_parts
 ```
+
+For the distributed Drive release (23 transport ZIPs + `bins.parquet`), run the publication-oriented validator:
+
+```bash
+python -m pip install -r requirements-validation.txt
+python scripts/validate_v4_0_paper.py --project-root "/path/to/Dhaka Smart Waste V4.0 2025"
+```
+
+For the exact package versions used in the successful 22 September 2026 full-release validation, see `requirements-validation.txt` and `validation/environment_summary.txt`.
 
 Validate the CSV/GZIP release:
 
 ```bash
 python scripts/validate_csv_parts.py /path/to/CSV_PARTS
 ```
+
+### Post-release reproducibility note
+
+The **V4.0 dataset bytes are unchanged**. The repository `main` branch contains post-release reproducibility-path fixes, the reviewer-oriented validator, and validation evidence generated from the distributed V4.0 release. The historical GitHub `v4.0` tag remains an archival snapshot and is not rewritten.
 
 ## Full-release technical validation
 
