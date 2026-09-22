@@ -1,11 +1,13 @@
 #!/usr/bin/env python3
 from pathlib import Path
+import sys
 import struct
 from thrift.protocol import TCompactProtocol
 from thrift.transport import TTransport
 from thrift.Thrift import TType
 
-BASE = Path(__file__).resolve().parent / "final_parts"
+REPO_ROOT = Path(__file__).resolve().parents[1]
+BASE = Path(sys.argv[1]).expanduser().resolve() if len(sys.argv) > 1 else REPO_ROOT / "final_parts"
 EXPECTED_PARTS = 92
 EXPECTED_TOTAL_ROWS = 43_800_000
 NORMAL_PART_ROWS = 480_000
