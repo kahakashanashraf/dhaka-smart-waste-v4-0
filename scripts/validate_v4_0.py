@@ -1,13 +1,16 @@
 #!/usr/bin/env python3
 from pathlib import Path
-import json, math
+import json, math, sys
 from collections import defaultdict
 from datetime import datetime, timezone, timedelta
 import h5py, numpy as np, pandas as pd
 
-P=Path(__file__).resolve().parent
-H5=P/'dhaka_smart_waste_v4_0_2025.h5'
-OUT=P/'VALIDATION_REPORT.json'
+SCRIPT_DIR = Path(__file__).resolve().parent
+REPO_ROOT = SCRIPT_DIR.parent
+H5 = Path(sys.argv[1]).expanduser().resolve() if len(sys.argv) > 1 else REPO_ROOT / 'src' / 'dhaka_smart_waste_v4_0_2025.h5'
+OUT = Path(sys.argv[2]).expanduser().resolve() if len(sys.argv) > 2 else REPO_ROOT / 'VALIDATION_REPORT.json'
+if not H5.exists():
+    raise SystemExit(f'Canonical HDF5 not found: {H5}. Run: python src/generate_v4_0.py')
 comp_cols=['organic_food_pct','fish_meat_pct','animal_residue_pct','plastic_pct','paper_cardboard_pct','textile_pct','metal_glass_pct','green_other_pct']
 with h5py.File(H5,'r') as f:
     b=f['bins']; o=f['observations']; n=int(f.attrs['n_rows']); nb=int(f.attrs['n_bins'])
