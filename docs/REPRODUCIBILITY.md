@@ -114,7 +114,7 @@ From the directory containing the release documentation:
 python --version
 python -m pip --version
 python -m pip freeze > environment_lock.txt
-python capture_environment.py > environment_summary.txt
+python scripts/capture_environment.py > environment_summary.txt
 ```
 
 The supplied `capture_environment.py` records:
@@ -168,7 +168,7 @@ python capture_environment.py > environment_summary.txt
 ### Step 5 — generate the canonical dataset
 
 ```bash
-python generate_v4_0.py
+python src/generate_v4_0.py
 ```
 
 Expected canonical output file:
@@ -186,7 +186,7 @@ The final console output should report creation of the HDF5 file. The generator 
 ### Step 6 — run the full canonical-state validation
 
 ```bash
-python validate_v4_0.py
+python scripts/validate_v4_0.py
 ```
 
 Expected validation artifact:
@@ -222,7 +222,7 @@ final_parts/
 Then run:
 
 ```bash
-python validate_export_parts.py
+python scripts/validate_export_parts.py final_parts
 ```
 
 Expected output:
@@ -306,3 +306,11 @@ Scientific/structural reproducibility should be reported using:
 The data are a scenario-based synthetic digital twin, not field sensor measurements.
 
 The external evidence base supports selected calendar, climate and waste-system anchors. Fine-grained hourly multipliers, sensor-fault rates, recovery-rate ranges and similar coefficients are explicit simulation assumptions. Reproduction of the dataset does not constitute empirical validation of those assumptions.
+
+---
+
+## 11. Reviewer-oriented full-release validation
+
+A separate full-release validator was run against the distributed Parquet package on 22 September 2026. It scanned all **43,800,000** hourly observations and all **92** logical Parquet parts, with **0 duplicate** and **0 missing** bin-hour keys. The automated gate reported **49 hard checks PASS**, **15 soft checks PASS**, **0 hard failures**, and **0 warnings**.
+
+Publication-oriented validation artifacts are maintained under `validation/` on the repository main branch, including the check summary, ZIP-to-Parquet mapping, SHA-256 release manifest, environment summary, monthly climate table, scenario summaries, and technical-validation draft. These checks establish structural/rule consistency and reproducibility of the synthetic release; they are not field validation of deployed municipal smart bins.
