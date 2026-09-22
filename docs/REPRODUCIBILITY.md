@@ -108,7 +108,7 @@ peak or observed storage usage
 
 ## 5. Capture the environment before regeneration
 
-From the directory containing the release documentation:
+From the repository root:
 
 ```bash
 python --version
@@ -241,6 +241,22 @@ parts 000–090: 480,000 rows each
 part 091:       120,000 rows
 total:       43,800,000 rows
 ```
+
+### Step 8 — validate the distributed transport release
+
+When validating the released Drive layout containing 23 Parquet transport ZIPs plus `PARQUET_PARTS/bins.parquet`, use the publication-oriented validator:
+
+```bash
+python -m pip install -r requirements-validation.txt
+python scripts/validate_v4_0_paper.py \
+  --project-root "/path/to/Dhaka Smart Waste V4.0 2025" \
+  --extract-dir "/tmp/dhaka_smart_waste_v4_validation" \
+  --output-dir "/path/to/VALIDATION_OUTPUTS"
+```
+
+The successful 22 September 2026 release-level run scanned all 43,800,000 hourly rows and produced the artifacts mirrored in `validation/`.
+
+---
 
 ---
 
