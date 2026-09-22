@@ -4,6 +4,7 @@ __pycache__/
 *.h5
 *.hdf5
 *.parquet
+!data/bins.parquet
 observations_part_*.csv.gz
 *.zip
 environment_lock.txt
