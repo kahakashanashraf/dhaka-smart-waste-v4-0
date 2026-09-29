@@ -149,7 +149,7 @@ Ramadan, institutional closure, weekend, holiday, rain/storm and other context f
 
 ### Special contextual effects
 
-A Friday-prayer scenario applies to mosque-adjacent bins during the Friday 12:00–14:00 window. The bin-specific multiplier is sampled within the range implemented by the generator.
+A Friday-prayer scenario applies to mosque-adjacent bins during hours 12, 13 and 14 on Friday (12:00–14:59 local time). The bin-specific multiplier is sampled within the range implemented by the generator.
 
 Eid-ul-Adha produces the strongest exceptional pulse, especially for Residential and Informal Settlement contexts, and also changes residual waste composition toward animal residue. Eid-ul-Fitr applies a weaker event effect to selected household, commercial and recreation contexts.
 
