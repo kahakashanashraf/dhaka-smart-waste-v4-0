@@ -28,7 +28,7 @@
 | bins | informal_recovery_rate | float32 | fraction | Scenario rate controlling pre-bin recovery of recyclable fractions. | Synthetic/generated |
 | bins | collection_threshold_percent | float32 | % | Fill threshold for needs_collection. | Synthetic/generated |
 | bins | battery_drain_percent_per_hour | float32 | percentage points/h | Synthetic hourly battery drain parameter. | Synthetic/generated |
-| bins | friday_prayer_multiplier | float32 | multiplier | Scenario multiplier applied to mosque-adjacent bins on Friday 12:00-14:00. | Synthetic/generated |
+| bins | friday_prayer_multiplier | float32 | multiplier | Scenario multiplier applied to mosque-adjacent bins during hours 12, 13 and 14 on Friday (12:00–14:59 local time). | Synthetic/generated |
 | bins | eid_day_multiplier | float32 | multiplier | Eid-ul-Adha day generation multiplier by source context. | Synthetic/generated |
 | bins | base_composition_percent | float32[8] | % | Base 8-part waste-composition vector before hourly perturbation and recovery. | Synthetic/generated |
 | observations | bin_index | int32 | index | Join key to bins table. | Synthetic/generated |
@@ -82,7 +82,7 @@
 | observations | is_packet_loss | uint8 | 0/1 | Injected telemetry packet-loss flag. | Synthetic/generated |
 | observations | is_sensor_anomaly | uint8 | 0/1 | Injected sensor-anomaly flag. | Synthetic/generated |
 | observations | sensor_error_code | uint8 | lookup | Anomaly type: none/saturation/spike. | Synthetic/generated |
-| observations | is_friday_prayer_window | uint8 | 0/1 | Friday 12:00-14:00 calendar window. | Synthetic/generated |
+| observations | is_friday_prayer_window | uint8 | 0/1 | Friday prayer calendar window covering hours 12, 13 and 14 (12:00–14:59 local time). | Synthetic/generated |
 | observations | friday_effect_active | uint8 | 0/1 | Friday prayer multiplier active for mosque-adjacent bin. | Synthetic/generated |
 | observations | is_ramadan | uint8 | 0/1 | Ramadan 2025 flag (2-30 March in the simulator). | Synthetic/generated |
 | observations | is_eid_fitr_period | uint8 | 0/1 | Eid-ul-Fitr holiday window flag (29 Mar-3 Apr). | Synthetic/generated |
